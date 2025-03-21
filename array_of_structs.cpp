@@ -2,22 +2,15 @@
 #include <fstream>
 using namespace std;
 
-// Jose Lopez, Cesar Alvarez
 // TODO: Step 1 - Define the struct TemperatureRecord
 // It should contain two integer fields: day and temperature.
-struct TemperatureRecord  {
-    
-    int day;
-    int temperature;
-};
+
+
 // Constants
 const int MAX_DAYS = 31;
 
-//Global declaration of the array
-TemperatureRecord temperatures[MAX_DAYS];
-
 // Function Prototypes
-void readTemperatures (???); // TODO: Fix the parameters
+void readTemperatures(???); // TODO: Fix the parameters
 void printTemperatures(const ???);
 TemperatureRecord findMin(const ???);
 TemperatureRecord findMax(const ???);
@@ -39,9 +32,7 @@ int main() {
 
 // TODO: Step 6 - Implement readTemperatures()
 // Read from "temps.txt" and store data in the array
-ifstream inputfile("temps.txt");
-int size = 0
-while (size 31 < && inputfile >> temp[size])
+
 // TODO: Step 7 - Implement printTemperatures()
 // Print all stored temperatures in a formatted table
 
