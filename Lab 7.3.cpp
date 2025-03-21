@@ -16,12 +16,13 @@ const int MAX_DAYS = 31;
 //Global declaration of the array
 TemperatureRecord temperatures[MAX_DAYS];
 
-// Function Prototypes
-void readTemperatures (???); // TODO: Fix the parameters
-void printTemperatures(const ???);
-TemperatureRecord findMin(const ???);
-TemperatureRecord findMax(const ???);
-double findAverage(const ???);
+// Function Prototypes Fix the parameters
+void readTemperatures(TemperatureRecord arr[], int& size);
+void printTemperatures(const TemperatureRecord arr[], int size);
+TemperatureRecord findMin(const TemperatureRecord arr[], int size);
+TemperatureRecord findMax(const TemperatureRecord arr[], int size);
+double findAverage(const TemperatureRecord arr[], int size);       
+
 
 int main() {
     // TODO: Step 2 - Declare an array of TemperatureRecord structs (MAX_DAYS size)
@@ -39,9 +40,8 @@ int main() {
 
 // TODO: Step 6 - Implement readTemperatures()
 // Read from "temps.txt" and store data in the array
-ifstream inputfile("temps.txt");
+ifstream inputFile("temps.txt");
 int size = 0
-while (size 31 < && inputfile >> temp[size])
 // TODO: Step 7 - Implement printTemperatures()
 // Print all stored temperatures in a formatted table
 
